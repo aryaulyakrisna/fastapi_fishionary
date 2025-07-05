@@ -19,7 +19,7 @@ async def predict_fish_route(schema: schema_predict):
 
         if (result == None):
             return JSONResponse(
-                content = {"Cannot predicted fish"},
+                content = "Cannot predicted fish",
                 status_code= status.HTTP_200_OK
                 )
         else:
